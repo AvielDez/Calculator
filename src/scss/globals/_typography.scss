@@ -1,0 +1,74 @@
+@use '../util';
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+html, body{
+    font-weight: 700;
+    font-family: 'League Spartan', sans-serif;
+}
+h1, h2, h3, p{
+    margin: 0;
+}
+
+button{
+    font-family: inherit;
+}
+
+.header__title{
+    font-size: 2rem;
+}
+
+.toggle{
+    font-size: .75rem;
+    
+    &__name{
+        font-size: inherit;
+        text-transform: uppercase;
+    }
+}
+
+.display__upper-line{
+    text-align: right;
+}
+.display__main-line{
+    text-align: right;
+    font-size: 3rem;
+}
+
+.key--font-size-1-75rem{
+    font-size: 1.75rem;
+}
+.key--font-size-2-5rem{
+    font-size: 2.5rem;
+}
+
+@media all and (max-height: util.$landscape-orientation) and (orientation : landscape) {
+    .display__upper-line{
+        font-size: .75rem;
+    }
+    .display__main-line{
+        font-size: 1.5rem;
+    }
+    .key--font-size-1-75rem{
+        font-size: 1rem;
+    }
+    .key--font-size-2-5rem{
+        font-size: 1.5rem;
+    }
+}
+
+// @media all and (orientation: landscape) {
+//     .display__upper-line{
+//         font-size: .75rem;
+//     }
+//     .display__main-line{
+//         font-size: 1.5rem;
+//     }
+//     .key--font-size-1-75rem{
+//         font-size: 1rem;
+//     }
+//     .key--font-size-2-5rem{
+//         font-size: 1.5rem;
+//     }
+// }
+
+
