@@ -1,0 +1,16 @@
+@use '../util';
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 2rem;
+    padding-inline: .5rem;
+}
+
+@media all and (max-height: util.$landscape-orientation) and (orientation : landscape) {
+    .header{
+        margin-bottom: .5rem;
+    }
+}
