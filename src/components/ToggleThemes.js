@@ -16,9 +16,6 @@ export default function ToggleThemes({toggle, togglePosition}){
             return {transform: themeThreePosition} 
         }
     }
-
-export default function ToggleThemes(){
-
     return (
         <div className='toggle'>
             <h1 className='toggle__name'>theme</h1>
