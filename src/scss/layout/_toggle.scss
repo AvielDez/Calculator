@@ -1,0 +1,37 @@
+.toggle{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 26px;
+
+    &__name{
+        margin-bottom: 6px;
+    }
+    &__switch-container{
+        
+        .toggle__switch-numbers{
+            display: flex;
+            justify-content: space-around;
+            margin-left: 3px;
+        }
+        
+    }
+    &__switch-bg{
+        position: relative;
+        height: 26px;
+        width: 75px;
+        border-radius: 13px;
+        cursor: pointer;
+
+        .toggle__switch-circle{
+            transition: all 200ms ease-in-out;
+            position: absolute;
+            height: 16px;
+            width: 16px;
+            margin-inline: 5px;
+            border-radius: 50%;
+            background-color: hsl(6, 63%, 50%);
+        }
+        
+    }
+}
