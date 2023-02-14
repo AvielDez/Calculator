@@ -17,14 +17,15 @@
         
     }
     &__switch-bg{
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
+        position: relative;
         height: 26px;
         width: 75px;
         border-radius: 13px;
+        cursor: pointer;
 
         .toggle__switch-circle{
+            transition: all 200ms ease-in-out;
+            position: absolute;
             height: 16px;
             width: 16px;
             margin-inline: 5px;
