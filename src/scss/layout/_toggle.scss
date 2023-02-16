@@ -30,7 +30,16 @@
             width: 16px;
             margin-inline: 5px;
             border-radius: 50%;
-            background-color: hsl(6, 63%, 50%);
         }
     }
+}
+
+.toggle-position-1{
+    transform: translate(1px, 5px);
+}
+.toggle-position-2{
+    transform: translate(24px, 5px);
+}
+.toggle-position-3{
+    transform: translate(48px, 5px);
 }
