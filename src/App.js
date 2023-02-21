@@ -9,7 +9,7 @@ export default function App() {
   const [togglePosition, setTogglePosition] = React.useState(() => {
     return localStorage.togglePosition || positionOne
   })
-  console.log(localStorage.togglePosition)
+ 
   React.useEffect(()=>{
     localStorage.setItem('togglePosition', togglePosition)
   },[togglePosition])
@@ -25,7 +25,7 @@ export default function App() {
         setTogglePosition(prevTogglePosition=> positionOne)
       }
   }
- console.log(togglePosition)
+
   return (
     <div className={`app app-${togglePosition}`}>
       <Calculator 
