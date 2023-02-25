@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function Input({togglePosition, keyInput}){
-    const buttonKeysArray = [7, 8, 9, 'DEL', 4, 5, 6, '+', 1, 2, 3, '-', '.', 0, '/', 'x']
+    const buttonKeysArray = ['7','8', '9', 'DEL', '4', '5', '6', '+', '1', '2', '3', '-', '.','0', '/', 'x']
 
     const buttonKeys = buttonKeysArray.map(key=>{
         if(key === 'DEL'){
